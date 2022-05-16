@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkslategray;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.todo-container {
+  width: 1000px;
+  height: 800px;
+  display: flex;
+}
+
+ .todo_1, .todo_2, .todo_3, .todo_4{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+  box-shadow: #3c3949 0px 2px 4px;
+  border-radius: 4px;
+  padding: 10px 10px;
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+.todo_1 .close, .todo_2 .close, .todo_3 .close, .todo_4 .close, .list-item .close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 27px;
+  color: #ccc;
+  cursor: pointer;
+}
+.status  {
+  width: 25%;
+  background-color: #dce7e9;
+  position: relative;
+  padding: 40px 10px 5px;
+}
+
+.status:nth-child(2n+2) {
+  background-color: #c6b5cd6b;
+}
+
+.status h1 {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  background-color: #3c3949;
+  font-size: 24px;
+  color: #f3f3f3;
+  margin: 0;
+  width: 100%;
+  padding: 20px 20px;
+}
+
+#add_btn_0, #add_btn_1, #add_btn_2, #add_btn_3  {
+  padding: 10px 10px;
+  background-color: #ccc;
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: 24px;
+  margin: 60px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.close-modal, .arrow-modal {
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+
+.modal {
+  width: 450px;
+  position: fixed;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: top 0.3s ease-in-out;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.modal.active {
+  top: 15%;
+}
+
+.modal .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.modal .body {
+  padding: 12px;
+}
+
+
+#todo_input_0, #todo_submit_0, #todo_input_1, #todo_submit_1, #todo_input_2, #todo_submit_2, #todo_input_3, #todo_submit_3  {
+  padding: 8px 10px;
+  width: 100%;
+  margin: 2px;
+}
+
+#todo_submit_0, #todo_submit_1, #todo_submit_2, #todo_submit_3 {
+  background-color: #729173;
+  color: #f3f3f3;
+  font-size: 15px;
+  border: none;
+}

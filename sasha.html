@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="description" content="layout with float and flex">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="sasha.css" />
+    <title>kanban</title>
+  </head>
+
+  <body>
+
+
+    <div class="todo-container">
+
+      <div class="status" id="no_status">
+        <h1><span contenteditable="true" class="title">Запланировано</span></h1>
+        <button id="add_btn_0" data-target-modal="#todo_form_0">Новая задача</button>
+        <div class="todo_1">Task<span class="close">&times;</span></div>
+      </div>
+
+      <div class="status" id="status_1">
+        <h1><span contenteditable="true" class="title">В работе</span></h1>
+        <button id="add_btn_1" data-target-modal="#todo_form_1">Новая задача</button>
+        <div class="todo_2">Task<span class="close">&times;</span></div>
+      </div>
+
+      <div class="status" id="status_2">
+        <h1><span contenteditable="true" class="title">Выполнено</span></h1>
+        <button id="add_btn_2" data-target-modal="#todo_form_2">Новая задача</button>
+        <div class="todo_3">Task<span class="close">&times;</span></div>
+      </div>
+
+      <div class="status" id="status_3">
+        <h1><span contenteditable="true" class="title">Отложено</span></h1>
+        <button id="add_btn_3" data-target-modal="#todo_form_3">Новая задача</button>
+        <div class="todo_4">Task<span class="close">&times;</span></div>
+      </div>
+      
+    
+
+    </div>
+    
+
+  <div class="modal" id="todo_form_0">
+
+      <div class="header">
+        <div class="title">Новая задача</div>
+        <button class="btn close-modal">&times;</button>
+      </div>
+
+      <div class="body">
+        <input type="text" id="todo_input_0" />
+        <input type="submit" value="Добавить задачу" id="todo_submit_0" />
+      </div>
+
+    </div>
+
+    <div class="modal" id="todo_form_1">
+
+      <div class="header">
+        <div class="title">Новая задача</div>
+        <button class="btn close-modal">&times;</button>
+      </div>
+
+      <div class="body">
+        <input type="text" id="todo_input_1" />
+        <input type="submit" value="Добавить задачу" id="todo_submit_1" />
+      </div>
+
+    </div>
+
+    <div class="modal" id="todo_form_2">
+
+      <div class="header">
+        <div class="title">Новая задача</div>
+        <button class="btn close-modal">&times;</button>
+      </div>
+
+      <div class="body">
+        <input type="text" id="todo_input_2" />
+        <input type="submit" value="Добавить задачу" id="todo_submit_2" />
+      </div>
+
+    </div>
+    
+    <div class="modal" id="todo_form_3">
+
+      <div class="header">
+        <div class="title">Новая задача</div>
+        <button class="btn close-modal">&times;</button>
+      </div>
+
+      <div class="body">
+        <input type="text" id="todo_input_3" />
+        <input type="submit" value="Добавить задачу" id="todo_submit_3" />
+      </div>
+
+    </div>
+    
+
+
+    <script src="sasha.js"></script>
+  </body>
+</html>
